@@ -1,8 +1,8 @@
 #pragma once
 
 
-#define STR_IMPL(x) #x
-#define STR(x)  STR_IMPL(x)
+#define _STR_IMPL(x) #x
+#define STR(x)  _STR_IMPL(x)
 
 
 #ifdef __cplusplus

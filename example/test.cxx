@@ -13,6 +13,10 @@ int main() {
         std::cout << "C++ version: " << CXX_STD_VERSION << "\n";
     #endif
 
+    std::cout << "\tversion number: " << CXX_STD << "\n";
+    std::cout << "\tversion name: " << CXX_STD_NAME << "\n";
+
+
     printf("app version: %s\n", VERSION_STR);
     printf("\tcommit: %s\n", VERSION_HASH);
     printf("\tbranch: %s\n", VERSION_BRANCH);
