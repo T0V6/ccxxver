@@ -9,7 +9,7 @@
 
 ## limitations
 - for C lang versions prior to C99 it will show `preC99`
-- for C++ lang versions prior to C11 it will show `preCXX11`
+- for C++ lang versions prior to C++11 it will show `preCXX11`
 
 ---
 
