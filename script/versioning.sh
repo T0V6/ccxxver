@@ -18,7 +18,7 @@ else
     VERSION_COUNT_OFFSET_LAST="0"
 fi
 
-VERSION_TIMESTAMP="$(date +%Y%m%d%H%M%S)"   # YYYYMMDDHHMMSS
+VERSION_TIMESTAMP="$(date -u +%Y%m%d%H%M%S)"   # YYYYMMDDHHMMSS
 
 
 # gen version header

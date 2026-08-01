@@ -2,7 +2,7 @@
 
 ## feats
 - [std_v.h](include/std_v.h): get c/c++ language version
-- [version.h](include/version.h): system version config (generated via [versioning.sh](script/versioning.sh))
+- [version.h](include/version.h): system version header (generated via [versioning.sh](script/versioning.sh))
 - [versioning.sh](script/versioning.sh): generate system version and fill [version.h](include/version.h)
 
 ---
