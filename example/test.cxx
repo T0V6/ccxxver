@@ -1,7 +1,9 @@
 #include <print>
 #include <iostream>
+
 #include "include/lang.h"
 #include "include/version.h"
+#include "include/comp.h"
 
 
 int main() {
@@ -15,6 +17,9 @@ int main() {
 
     std::cout << "\tversion number: " << CXX_STD << "\t(" << CXX_STD_STR << ")\n";
     std::cout << "\tversion name: " << CXX_STD_NAME << "\n";
+
+
+    printf("\nCompiler: %s\n\tversion: %s\n", COMPILER_NAME, COMPILER_VERSION);
 
 
     printf("\napp version: %s\n", VERSION_STR);

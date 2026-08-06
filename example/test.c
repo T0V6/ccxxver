@@ -1,6 +1,8 @@
 #include <stdio.h>
+
 #include "include/version.h"
 #include "include/lang.h"
+#include "include/comp.h"
 
 
 int main (void) {
@@ -14,6 +16,9 @@ int main (void) {
     #endif
 
     printf("\tversion number: %ld\t(%s)\n\tversion name: %s\n", C_STD, C_STD_STR, C_STD_NAME);
+
+
+    printf("\nCompiler: %s\n\tversion: %s\n", COMPILER_NAME, COMPILER_VERSION);
 
 
     printf("\napp version: %s\n", VERSION_STR);
