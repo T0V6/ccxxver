@@ -22,3 +22,11 @@
     "." \
     VERSION_COUNT_OFFSET_LAST_STR \
 )
+
+#define VERSION_SHORT_STR (\
+    VERSION_COUNT_STR \
+    "-" \
+    VERSION_BRANCH \
+    "." \
+    VERSION_COUNT_OFFSET_LAST_STR \
+)
