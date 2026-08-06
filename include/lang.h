@@ -17,7 +17,8 @@
     #endif
 
 
-    #define CXX_STD CCXXVER_STR(CCXXVER_COMPILER_CXX_STD)
+    #define CXX_STD         CCXXVER_COMPILER_CXX_STD
+    #define CXX_STD_STR     CCXXVER_STR(CCXXVER_COMPILER_CXX_STD)
 
 
     #define CCXXVER_LANG_STD_CXX11   201103L //0x (1x)
@@ -75,7 +76,7 @@
     #endif
 
 
-    #define CXX_STD_VERSION     CXX_STD_NAME "_" CXX_STD
+    #define CXX_STD_VERSION     CXX_STD_NAME "_" CXX_STD_STR
 
 #elif defined(__STDC_VERSION__) || defined(__STDC__)
     ////////////////
@@ -89,7 +90,8 @@
     #endif
 
 
-    #define C_STD CCXXVER_STR(CCXXVER_COMPILER_C_STD)
+    #define C_STD       CCXXVER_COMPILER_C_STD
+    #define C_STD_STR   CCXXVER_STR(CCXXVER_COMPILER_C_STD)
 
 
     #define CCXXVER_LANG_STD_C99     199901L // (0X)
@@ -140,7 +142,7 @@
     #endif
 
 
-    #define C_STD_VERSION     C_STD_NAME "_" C_STD
+    #define C_STD_VERSION     C_STD_NAME "_" C_STD_STR
 
 #else
     #error "non standard compiler or unsupported C/CXX version (__cplusplus/__STDC__/__STDC_VERSION__ undefined)"

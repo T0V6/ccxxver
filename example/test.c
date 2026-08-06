@@ -13,10 +13,10 @@ int main (void) {
         printf("C version: %s\n", C_STD_VERSION);
     #endif
 
-    printf("\tversion number: %s\n\tversion name: %s\n", C_STD, C_STD_NAME);
+    printf("\tversion number: %ld\t(%s)\n\tversion name: %s\n", C_STD, C_STD_STR, C_STD_NAME);
 
 
-    printf("app version: %s\n", VERSION_STR);
+    printf("\napp version: %s\n", VERSION_STR);
     printf("\tcommit: %s\n", VERSION_HASH);
     printf("\tbranch: %s\n", VERSION_BRANCH);
     printf("\tbuild time: %s\n", VERSION_TIMESTAMP_STR);
