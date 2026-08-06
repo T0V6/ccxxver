@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "include/version.h"
-#include "include/std_v.h"
+#include "include/lang.h"
 
 
 int main (void) {
