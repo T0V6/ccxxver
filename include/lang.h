@@ -4,8 +4,10 @@
 //////////////////////////////////////////////////////////
 // private impl
 //////////////////////////////////////////////////////////
-#define CCXXVER_STR_IMPL(x) #x
-#define CCXXVER_STR(x)  CCXXVER_STR_IMPL(x)
+#ifndef CCXXVER_STR
+    #define CCXXVER_STR_IMPL(x) #x
+    #define CCXXVER_STR(x)  CCXXVER_STR_IMPL(x)
+#endif
 
 
 #ifdef __cplusplus
