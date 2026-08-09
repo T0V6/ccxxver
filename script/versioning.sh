@@ -45,7 +45,7 @@ else
     OFFSET=0
     DIRTY=""
 fi
-TIMESTAMP="$(date -u +%Y%m%d%H%M%S)"
+TIMESTAMP="$(date -u +"%Y%m%d$(($(date -u +%-H)*3600 + $(date -u +%-M)*60 + $(date -u +%-S)))")"
 
 
 esc() { printf '%s' "$1" | sed -e 's/[&\@]/\\&/g'; }
